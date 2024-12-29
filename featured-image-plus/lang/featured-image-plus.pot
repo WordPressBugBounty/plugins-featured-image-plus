@@ -1,0 +1,468 @@
+# Featured Image Plus - Optimize your WordPress workflow with Featured Image Plus, managing featured images easily with bulk edit and Unsplash integration.
+# Copyright (c) 2024 Developry
+# This file is distributed under the same license as the plugin, GPLv3 or later.
+# Krasen Slavov <contact@developry.com>, 2024.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.1\n"
+"Report-Msgid-Bugs-To: Featured Image Plus <contact@developry.com>\n"
+"POT-Creation-Date: 2023-03-19 10:03+0200\n"
+"PO-Revision-Date: 2024-12-13 10:03+0200\n"
+"Last-Translator: Krasen Slavov <contact@developry.com>\n"
+"Language-Team: FIP <contact@developry.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Eazy Po 1.0.0.0\n"
+#: featured-image-plus.php:41 inc/admin/settings/settings-main-page.php:122
+#: inc/admin/settings/settings-menu.php:23
+#: inc/admin/settings/settings-menu.php:34
+msgid "Featured Image Plus"
+msgstr ""
+
+#: inc/admin/block-editor/block-editor-actions.php:27
+#: inc/admin/block-editor/block-editor-actions.php:104
+#: inc/admin/block-editor/block-editor-actions.php:222
+msgid "You must select a source from the list."
+msgstr ""
+
+#: inc/admin/block-editor/block-editor-actions.php:34
+msgid ""
+"Empty or invalid Unsplash API access key! Go to the plugin <a href=\"/wp-"
+"admin/admin.php?page=fip_settings\" target=\"_blank\">Options</a> page."
+msgstr ""
+
+#: inc/admin/block-editor/block-editor-actions.php:56
+#: inc/admin/block-editor/block-editor-actions.php:97
+#: inc/admin/block-editor/block-editor-actions.php:215
+msgid "Invalid post ID or post not found."
+msgstr ""
+
+#: inc/admin/block-editor/block-editor-actions.php:111
+#: inc/admin/block-editor/block-editor-actions.php:236
+msgid "You must select a keyword from the list."
+msgstr ""
+
+#: inc/admin/block-editor/block-editor-actions.php:183
+msgid "No images found with the selected keyword."
+msgstr ""
+
+#: inc/admin/block-editor/block-editor-actions.php:229
+msgid "You must select an image option from the list."
+msgstr ""
+
+#: inc/admin/block-editor/block-editor-actions.php:252
+msgid "Failed to download the image from the provided URL."
+msgstr ""
+
+#: inc/admin/block-editor/block-editor-actions.php:266
+msgid "Failed to save the downloaded image to the uploads directory."
+msgstr ""
+
+#: inc/admin/block-editor/block-editor-actions.php:290
+msgid "Featured image attachment failed."
+msgstr ""
+
+#: inc/admin/block-editor/block-editor-actions.php:304
+msgid "Featured image attachment was successful."
+msgstr ""
+
+#: inc/admin/classic-editor/classic-editor.php:24
+msgid "Generate and attach a custom featured image using the Unsplash API."
+msgstr ""
+
+#: inc/admin/classic-editor/classic-editor.php:31
+msgid "-- Select Source --"
+msgstr ""
+
+#: inc/admin/classic-editor/classic-editor.php:32
+msgid "Unsplash"
+msgstr ""
+
+#: inc/admin/classic-editor/classic-editor.php:38
+msgid "-- Select Keyword --"
+msgstr ""
+
+#: inc/admin/classic-editor/classic-editor.php:44
+msgid "-- Select Image --"
+msgstr ""
+
+#: inc/admin/classic-editor/classic-editor.php:51
+msgid "Attach featured image"
+msgstr ""
+
+#: inc/admin/requirements/action-links.php:23
+msgid "Settings"
+msgstr ""
+
+#: inc/admin/requirements/action-links.php:26
+#: inc/admin/requirements/pro-plugin.php:69
+msgid "Go Pro"
+msgstr ""
+
+#: inc/admin/requirements/check-requirements.php:52
+#, php-format
+msgid "%1$s requires a minimum of PHP %2$s and WordPress %3$s"
+msgstr ""
+
+#: inc/admin/requirements/check-requirements.php:64
+#, php-format
+msgid "You are currently running PHP %1$s and WordPress %2$s."
+msgstr ""
+
+#: inc/admin/requirements/notice-rating.php:31
+#, php-format
+msgid "✨💪🔌 Could you kindly support the plugin %1$s? Thank you in advance!"
+msgstr ""
+
+#: inc/admin/requirements/notice-rating.php:34
+msgid "by giving it 5 stars rating"
+msgstr ""
+
+#: inc/admin/requirements/notice-rating.php:40
+msgid "Rate us @ WordPress.org"
+msgstr ""
+
+#: inc/admin/requirements/notice-rating.php:44
+#: inc/admin/requirements/pro-plugin.php:73
+msgid "I already did"
+msgstr ""
+
+#: inc/admin/requirements/notice-rating.php:47
+#: inc/admin/requirements/pro-plugin.php:76
+msgid "Don't show this notice again!"
+msgstr ""
+
+#: inc/admin/requirements/pro-plugin.php:39
+msgid "Featured Image Plus PRO 🚀"
+msgstr ""
+
+#: inc/admin/requirements/pro-plugin.php:46
+#, php-format
+msgid "✨🎉📢 %1$s? Discover the added benefits of upgrading to %2$s?"
+msgstr ""
+
+#: inc/admin/requirements/pro-plugin.php:49
+msgid "Found the free version helpful"
+msgstr ""
+
+#: inc/admin/requirements/pro-plugin.php:50
+msgid "Featured Image Plus Pro"
+msgstr ""
+
+#: inc/admin/settings/compact-mode.php:38
+msgid "Compact mode moves the plugin access link under Settings."
+msgstr ""
+
+#: inc/admin/settings/compact-mode.php:66
+msgid "Compact mode option was updated successfully."
+msgstr ""
+
+#: inc/admin/settings/settings-actions.php:31
+msgid "All options have been reset to their default values."
+msgstr ""
+
+#: inc/admin/settings/settings-actions.php:54
+msgid "New featured image was added successfully."
+msgstr ""
+
+#: inc/admin/settings/settings-actions.php:60
+#: inc/admin/settings/settings-actions.php:88
+#: inc/admin/settings/settings-actions.php:124
+msgid "Unexpected error!"
+msgstr ""
+
+#: inc/admin/settings/settings-actions.php:82
+msgid "Removing featured image..."
+msgstr ""
+
+#: inc/admin/settings/settings-actions.php:118
+msgid "Removing all featured images..."
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:23
+msgid "Get the PRO version today!"
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:27
+msgid ""
+"The PRO version will unlock more features, better performance, priority "
+"support, and integration with OpenAI and Unsplash APIs."
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:32
+msgid "Feature"
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:33
+msgid "Free"
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:34
+msgid "PRO"
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:37
+msgid "AI Image Creator"
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:38
+#: inc/admin/settings/settings-main-page.php:43
+#: inc/admin/settings/settings-main-page.php:53
+#: inc/admin/settings/settings-main-page.php:58
+#: inc/admin/settings/settings-main-page.php:63
+#: inc/admin/settings/settings-main-page.php:68
+#: inc/admin/settings/settings-main-page.php:73
+#: inc/admin/settings/settings-main-page.php:83
+#: inc/admin/settings/settings-main-page.php:93
+msgid "no"
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:39
+#: inc/admin/settings/settings-main-page.php:44
+#: inc/admin/settings/settings-main-page.php:54
+#: inc/admin/settings/settings-main-page.php:59
+#: inc/admin/settings/settings-main-page.php:64
+#: inc/admin/settings/settings-main-page.php:69
+#: inc/admin/settings/settings-main-page.php:74
+#: inc/admin/settings/settings-main-page.php:79
+#: inc/admin/settings/settings-main-page.php:84
+#: inc/admin/settings/settings-main-page.php:88
+#: inc/admin/settings/settings-main-page.php:89
+#: inc/admin/settings/settings-main-page.php:94
+msgid "yes"
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:42
+msgid "Auto-generate images from Unsplash or OpenAI"
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:47
+msgid "Select support for registered CPTs"
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:48
+msgid "Posts, Pages & CPTs"
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:49
+msgid "all"
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:52
+msgid "Manage featured image visibility, position, size, etc."
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:57
+msgid "Add theme support for featured images"
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:62
+msgid "Add support to all public taxonomies"
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:67
+msgid ""
+"Auto-remove and attach featured images from post content; works with "
+"Classic, Block, and Elementor editors\t"
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:72
+msgid "WooCommerce and other 3rd-partry plugin support"
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:77
+msgid "Unsplash API itegration\t"
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:78
+msgid "limited"
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:82
+msgid "OpenAI/DALL-E 2 API integration"
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:87
+msgid "Sort and filter by featured images\t"
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:92
+msgid "Priority email support"
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:97
+msgid "Regular plugin updates"
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:98
+msgid "delayed"
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:99
+msgid "first release"
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:109
+msgid "GET PRO VERSION"
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:116
+msgid "Watch Video"
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:129
+msgid ""
+"Optimize your WordPress workflow with Featured Image Plus, managing featured "
+"images easily with bulk edit and Unsplash integration."
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:155
+msgid "Save"
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:163
+msgid "Reset"
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:179
+#, php-format
+msgid ""
+"If something isn't clear, please open a ticket on the official plugin %1$s. "
+"We aim to address all tickets within a few working days."
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:182
+msgid "Support Forum"
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:187
+msgid "Please rate us"
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:193
+msgid "Having issues?"
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:195
+msgid "Create a Support Ticket"
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:199
+msgid "Developed by"
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:201
+msgid "Krasen Slavov @ Developry"
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:214
+#, php-format
+msgid ""
+"* For the price of a cup of coffee per month, you can %1$s for the "
+"development and maintenance of all my free WordPress plugins. Every "
+"contribution helps and is deeply appreciated!"
+msgstr ""
+
+#: inc/admin/settings/settings-main-page.php:217
+msgid "help and support me on Patreon"
+msgstr ""
+
+#: inc/admin/settings/settings-menu.php:24
+#: inc/admin/settings/settings-menu.php:35
+msgid "Featured Image +"
+msgstr ""
+
+#: inc/admin/settings/settings-page.php:34
+msgid "Types Supported"
+msgstr ""
+
+#: inc/admin/settings/settings-page.php:45
+msgid "Theme Support"
+msgstr ""
+
+#: inc/admin/settings/settings-page.php:56
+msgid "Unsplash access key"
+msgstr ""
+
+#: inc/admin/settings/settings-page.php:67
+msgid "Compact Mode"
+msgstr ""
+
+#: inc/admin/settings/theme-support.php:38
+msgid "Enable theme support for featured images."
+msgstr ""
+
+#: inc/admin/settings/theme-support.php:66
+msgid "Theme support option was updated successfully."
+msgstr ""
+
+#: inc/admin/settings/types-supported.php:56
+msgid "Choose the post types supported by the plugin."
+msgstr ""
+
+#: inc/admin/settings/types-supported.php:84
+msgid "Supported types option was updated successfully."
+msgstr ""
+
+#: inc/admin/settings/unsplash-api-access-key.php:37
+msgid "Use the public Unsplash API with an access key."
+msgstr ""
+
+#: inc/admin/settings/unsplash-api-access-key.php:40
+msgid ""
+"You have a limit of 50 or 5,000 API requests per hour, depending on your app "
+"status."
+msgstr ""
+
+#: inc/admin/settings/unsplash-api-access-key.php:68
+msgid "Unspalsh access key option was updated successfully."
+msgstr ""
+
+#: inc/admin/views/featured-image-inline.php:22
+msgid "Featured Image"
+msgstr ""
+
+#: inc/admin/views/featured-image-inline.php:29
+#: inc/admin/views/featured-image-inline.php:30
+msgid "No image selected."
+msgstr ""
+
+#: inc/admin/views/featured-image-inline.php:29
+#: inc/admin/views/featured-image-inline.php:30
+msgid "Multiple images selected."
+msgstr ""
+
+#: inc/admin/views/featured-image-inline.php:38
+msgid "Browse..."
+msgstr ""
+
+#: inc/admin/views/featured-image-inline.php:52
+msgid "Remove featured image"
+msgstr ""
+
+#: inc/admin/views/featured-image-inline.php:57
+msgid "Remove all featured images"
+msgstr ""
+
+#: inc/library/class-fip-admin.php:81
+#, php-format
+msgid "%1$s! Contact us @ %2$s."
+msgstr ""
+
+#: inc/library/class-fip-admin.php:83
+msgid "Invalid security token"
+msgstr ""
+
+#: inc/library/class-fip-admin.php:114
+#, php-format
+msgid ""
+"%1$s! Current user does not have the capabilities to access this function."
+msgstr ""
+
+#: inc/library/class-fip-admin.php:115
+msgid "Access denied"
+msgstr ""
