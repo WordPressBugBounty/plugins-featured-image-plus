@@ -1,7 +1,7 @@
 # Featured Image Plus - Optimize your WordPress workflow with Featured Image Plus, managing featured images easily with bulk edit and Unsplash integration.
-# Copyright (c) 2024 Developry
+# Copyright (c) 2025 Developry
 # This file is distributed under the same license as the plugin, GPLv3 or later.
-# Krasen Slavov <contact@developry.com>, 2024.
+# Krasen Slavov <contact@developry.com>, 2025.
 #, fuzzy
 msgid ""
 msgstr ""

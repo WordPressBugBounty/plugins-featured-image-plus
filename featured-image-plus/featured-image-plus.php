@@ -3,7 +3,7 @@
  * Plugin Name: Featured Image Plus
  * Plugin URI: https://featuredimageplugin.com/
  * Description: Optimize your WordPress workflow with Featured Image Plus, managing featured images easily with bulk edit and Unsplash integration.
- * Version: 1.6.0
+ * Version: 1.6.1
  * Author: Krasen Slavov
  * Author URI: https://developry.com/
  * License: GPL3 or later
@@ -11,7 +11,7 @@
  * Text Domain: featured-image-plus
  * Domain Path: /lang
  *
- * Copyright (c) 2018 - 2024 Developry Ltd. (email: contact@developry.com)
+ * Copyright (c) 2018 - 2025 Developry Ltd. (email: contact@developry.com)
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License, version 2, as
@@ -39,7 +39,7 @@ define( __NAMESPACE__ . '\FIP_MIN_WP_VERSION', '5.0' );
 define( __NAMESPACE__ . '\FIP_PLUGIN_UUID', 'fip' );
 define( __NAMESPACE__ . '\FIP_PLUGIN_TEXTDOMAIN', 'featured-image-plus' );
 define( __NAMESPACE__ . '\FIP_PLUGIN_NAME', esc_html__( 'Featured Image Plus', 'featured-image-plus' ) );
-define( __NAMESPACE__ . '\FIP_PLUGIN_VERSION', '1.6.0' );
+define( __NAMESPACE__ . '\FIP_PLUGIN_VERSION', '1.6.1' );
 define( __NAMESPACE__ . '\FIP_PLUGIN_DOMAIN', 'featuredimageplugin.com' );
 define( __NAMESPACE__ . '\FIP_PLUGIN_DOCS', 'https://featuredimageplugin.com/help' );
 

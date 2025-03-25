@@ -6,7 +6,7 @@ Tags: featured image, woocommerce, custom post type, image
 Requires at least: 5.0
 Tested up to: 6.7
 Requires PHP: 7.2
-Stable tag: 1.6.0
+Stable tag: 1.6.1
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -104,6 +104,7 @@ This will display a block where you can easily attach, remove, or update feature
 WordPress shows 20 posts or pages per page by default.
 
 To edit more posts in bulk:
+
 1. Click **Screen Options** at the top right corner.
 2. Change the **Number of items per page** (e.g., 100).
 3. Click **Apply**.
@@ -149,6 +150,13 @@ The plugin installation is easy and straightforward. Let us know if you run into
 1. Open any post or page with featured image extened or use quick or bulk edit to manage featured images.
 
 ## CHANGELOG
+
+= 1.6.1 =
+
+- Update - Change year from 2024 -> 2025 all over
+- Fix - Load the assets for classic editor only when it is active and used to edit post/page
+- Fix - Simplify the the attach featured image function with `media_sideload_image()`
+- Fix - Add `showUnsplash` in JS check if API key is entered
 
 = 1.6.0 =
 

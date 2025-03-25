@@ -3,7 +3,7 @@
  * [Short Description]
  *
  * @package    DEVRY\FIP
- * @copyright  Copyright (c) 2024, Developry Ltd.
+ * @copyright  Copyright (c) 2025, Developry Ltd.
  * @license    https://www.gnu.org/licenses/gpl-3.0.html GNU Public License
  * @since      1.4
  */
@@ -346,7 +346,7 @@ if ( ! class_exists( 'Featured_Image_Plus' ) ) {
 		}
 
 		/**
-		 * Keep track of the Unsplash/OpenAI API requests made within the hour.
+		 * Keep track of the Unsplash API requests made within the hour.
 		 *
 		 * $num_requests is used for OpenAI only, since we can have 1-3 images
 		 * generated per API request selected from the Options we need to multiply the count

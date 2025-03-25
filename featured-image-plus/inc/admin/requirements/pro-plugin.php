@@ -3,7 +3,7 @@
  * [Short description]
  *
  * @package    DEVRY\FIP
- * @copyright  Copyright (c) 2024, Developry Ltd.
+ * @copyright  Copyright (c) 2025, Developry Ltd.
  * @license    https://www.gnu.org/licenses/gpl-3.0.html GNU Public License
  * @since      1.4
  */
@@ -30,12 +30,25 @@ register_activation_hook( FIP_PLUGIN_BASENAME, __NAMESPACE__ . '\fip_check_pro_p
 function fip_display_upgrade_notice() {
 	$fip_admin = new FIP_Admin();
 
-	if ( get_option( 'fip_upgrade_notice' )
-		&& get_transient( 'fip_upgrade_plugin' ) ) {
+	if ( get_option( 'fip_upgrade_notice' ) && get_transient( 'fip_upgrade_plugin' ) ) {
 		return;
 	}
 	?>
 		<div class="notice notice-success is-dismissible fip-admin">
+			<!-- <p class="fip-upgrade-notice-discount"> -->
+				<?php
+				// printf(
+				// 	wp_kses(
+				// 		/* translators: %1$s is replaced with "FIP10" */
+				// 		/* translators: %2$s is replaced with "10% off" */
+				// 		__( 'Use the %1$s promo code and get %2$s your purchase!', 'featured-image-plus' ),
+				// 		json_decode( FIP_PLUGIN_ALLOWED_HTML_ARR, true )
+				// 	),
+				// 	'<code>' . esc_html__( 'FIP10', 'featured-image-plus' ) . '</code>',
+				// 	'<strong>' . esc_html__( '10% off', 'featured-image-plus' ) . '</strong>'
+				// );
+				?>
+			<!-- </p> -->
 			<h3><?php echo esc_html__( 'Featured Image Plus PRO 🚀', 'featured-image-plus' ); ?></h3>
 			<p>
 				<?php
@@ -49,19 +62,6 @@ function fip_display_upgrade_notice() {
 					'<strong>' . esc_html__( 'Found the free version helpful', 'featured-image-plus' ) . '</strong>',
 					'<strong>' . esc_html__( 'Featured Image Plus Pro', 'featured-image-plus' ) . '</strong>'
 				);
-				?>
-				<!-- <br /> -->
-				<?php
-				// printf(
-				// 	wp_kses(
-				// 		/* translators: %1$s is replaced with "FIP10" */
-				// 		/* translators: %2$s is replaced with "10% off" */
-				// 		__( 'Use the %1$s promo code and get %2$s your purchase!', 'featured-image-plus' ),
-				// 		json_decode( FIP_PLUGIN_ALLOWED_HTML_ARR, true )
-				// 	),
-				// 	'<code>' . esc_html__( 'FIP10', 'featured-image-plus' ) . '</code>',
-				// 	'<strong>' . esc_html__( '10% off', 'featured-image-plus' ) . '</strong>'
-				// );
 				?>
 			</p>
 			<div class="button-group">

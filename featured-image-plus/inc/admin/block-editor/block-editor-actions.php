@@ -3,7 +3,7 @@
  * [Short description]
  *
  * @package    DEVRY\FIP
- * @copyright  Copyright (c) 2024, Developry Ltd.
+ * @copyright  Copyright (c) 2025, Developry Ltd.
  * @license    https://www.gnu.org/licenses/gpl-3.0.html GNU Public License
  * @since      1.5
  */
@@ -243,45 +243,13 @@ function fip_save_attach_featured() {
 
 	$image_url = esc_url_raw( $image_option . '.jpg' ); // Ensure the URL is sanitized assuming we get JPG file.
 
-	// Download the image to the WordPress uploads directory.
-	$temp_file = download_url( $image_url );
-
-	if ( is_wp_error( $temp_file ) ) {
-		$fip_admin->print_json_message(
-			0,
-			__( 'Failed to download the image from the provided URL.', 'featured-image-plus' )
-		);
-	}
-
-	// Get file information and move it to the uploads directory.
-	$uploads_dir = wp_upload_dir();
-	$file_info   = pathinfo( $image_url );
-	$filename    = sanitize_file_name( $file_info['basename'] );
-	$destination = $uploads_dir['path'] . '/' . $filename;
-
-	if ( ! rename( $temp_file, $destination ) ) {
-		@unlink( $temp_file ); // Clean up temporary file.
-		$fip_admin->print_json_message(
-			0,
-			__( 'Failed to save the downloaded image to the uploads directory.', 'featured-image-plus' )
-		);
-	}
-
-	// Get relative and absolute paths for further processing
-	$rel_filepath = str_replace( $uploads_dir['basedir'], '', $destination ); // Relative path.
-	$abs_filepath = $destination; // Absolute path.
-
-	// Prepare attachment data.
-	$attachment = array(
-		'guid'           => $uploads_dir['url'] . '/' . $filename, // URL of the file
-		'post_mime_type' => wp_check_filetype( $destination )['type'], // MIME type
-		'post_title'     => sanitize_text_field( ucwords( str_replace( '-', ' ', $file_info['filename'] ) ) ),
-		'post_content'   => '',
-		'post_status'    => 'inherit',
+	// Download and create attachment in one step using media_sideload_image()
+	$attachment_id = media_sideload_image(
+		$image_url,
+		$post_id,
+		sanitize_text_field( ucwords( str_replace( '-', ' ', pathinfo( $image_url, PATHINFO_FILENAME ) ) ) ),
+		'id'
 	);
-
-	// Insert attachment.
-	$attachment_id = wp_insert_attachment( $attachment, $rel_filepath, $post_id );
 
 	if ( is_wp_error( $attachment_id ) ) {
 		@unlink( $abs_filepath ); // Clean up downloaded file.
@@ -290,9 +258,6 @@ function fip_save_attach_featured() {
 			__( 'Featured image attachment failed.', 'featured-image-plus' )
 		);
 	}
-
-	$attach_data = wp_generate_attachment_metadata( $attachment_id, $abs_filepath );
-	wp_update_attachment_metadata( $attachment_id, $attach_data );
 
 	// Set as post thumbnail
 	set_post_thumbnail( $post_id, $attachment_id );

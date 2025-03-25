@@ -3,7 +3,7 @@
  * [Short description]
  *
  * @package    DEVRY\FIP
- * @copyright  Copyright (c) 2024, Developry Ltd.
+ * @copyright  Copyright (c) 2025, Developry Ltd.
  * @license    https://www.gnu.org/licenses/gpl-3.0.html GNU Public License
  * @since      1.4
  */
@@ -19,7 +19,9 @@ namespace DEVRY\FIP;
 function fip_display_rating_notice() {
 	$fip_admin = new FIP_Admin();
 
-	if ( ! get_option( 'fip_rating_notice', '' ) ) {
+	$current_screen = get_current_screen();
+
+	if ( ! get_option( 'fip_rating_notice', '' ) && strpos( $current_screen->id, 'fip_' ) ) {
 		?>
 			<div class="notice notice-info is-dismissible fip-admin">
 				<h3><?php echo esc_html( FIP_PLUGIN_NAME ); ?></h3>
