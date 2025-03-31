@@ -33,16 +33,6 @@ function fip_check_requirements() {
 			'admin_enqueue_scripts',
 			__NAMESPACE__ . '\fip_enqueue_admin_assets'
 		);
-
-		add_action(
-			'admin_notices',
-			__NAMESPACE__ . '\fip_display_upgrade_notice'
-		);
-
-		add_action(
-			'admin_notices',
-			__NAMESPACE__ . '\fip_display_rating_notice'
-		);
 	} else {
 		$message = sprintf(
 			wp_kses(

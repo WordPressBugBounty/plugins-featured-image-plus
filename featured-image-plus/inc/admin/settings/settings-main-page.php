@@ -22,11 +22,9 @@ $has_user_cap = $fip_admin->check_user_cap();
 		<h4>
 			<?php echo esc_html__( 'Get the PRO version today!', 'featured-image-plus' ); ?>
 		</h4>
-
 		<p>
 			<?php echo esc_html__( 'The PRO version will unlock more features, better performance, priority support, and integration with OpenAI and Unsplash APIs.', 'featured-image-plus' ); ?>
 		</p>
-
 		<table>
 			<tr>
 				<th><?php echo esc_html__( 'Feature', 'featured-image-plus' ); ?></th>
@@ -99,7 +97,6 @@ $has_user_cap = $fip_admin->check_user_cap();
 				<td><?php echo esc_html__( 'first release', 'featured-image-plus' ); ?></td>
 			</tr>
 		</table>
-
 		<p class="button-group">
 			<a
 				class="button button-primary button-pro"
@@ -117,11 +114,9 @@ $has_user_cap = $fip_admin->check_user_cap();
 			</a>
 		</p>
 	</div>
-
 	<h2>
 		<?php echo esc_html__( 'Featured Image Plus', 'featured-image-plus' ); ?>
 	</h2>
-
 	<p>
 		<?php
 		printf(
@@ -134,7 +129,6 @@ $has_user_cap = $fip_admin->check_user_cap();
 	</p>
 
 	<hr />
-
 	<form method="post" action="<?php echo esc_url( admin_url( 'options.php' ) ); ?>">
 		<div class="fip-loading-bar"></div>
 		<div id="fip-output" class="notice is-dismissible fip-output"></div>
@@ -165,11 +159,8 @@ $has_user_cap = $fip_admin->check_user_cap();
 			</p>
 		</div>
 	</form>
-
 	<br clear="all" />
-
 	<hr />
-
 	<div class="fip-support-credits">
 		<p>
 			<?php
@@ -202,9 +193,7 @@ $has_user_cap = $fip_admin->check_user_cap();
 			</a>
 		</p>
 	</div>
-
 	<hr />
-
 	<p>
 		<small>
 			<?php

@@ -17,8 +17,6 @@ namespace DEVRY\FIP;
  */
 function fip_activate_plugin( $plugin_file_path ) {
 	if ( FIP_PLUGIN_BASENAME === $plugin_file_path ) {
-		if ( get_option( 'fip_rating_notice', '' ) ) {
-		}
 	}
 }
 
@@ -29,7 +27,7 @@ add_action( 'activated_plugin', __NAMESPACE__ . '\fip_activate_plugin' );
  */
 function fip_deactivate_plugin( $plugin_file_path ) {
 	if ( FIP_PLUGIN_BASENAME === $plugin_file_path ) {
-		// delete_option( 'fip_rating_notice' );
+		delete_option( 'fip_rating_notice' );
 		delete_option( 'fip_upgrade_notice' );
 	}
 }
